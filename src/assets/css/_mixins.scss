@@ -92,16 +92,13 @@
   }
 }
 
-/
-----
-
+// ----
 // テキストの縁取り
 // * ex) @include text-stroke(2, #fff);
 // ----
 @mixin text-stroke($size: 2, $bg: #000) {
   text-shadow: #{$size}px 0 0 #{$bg}, -#{$size}px 0 0 #{$bg}, 0 -#{$size}px 0 #{$bg}, 0 #{$size}px 0 #{$bg}, #{$size}px #{$size}px 0 #{$bg}, -#{$size}px #{$size}px 0 #{$bg}, #{$size}px -#{$size}px 0 #{$bg}, -#{$size}px -#{$size}px 0 #{$bg}, #{$size - 1}px #{$size}px 0 #{$bg}, -#{$size - 1}px #{$size}px 0 #{$bg}, #{$size - 1}px -#{$size}px 0 #{$bg}, -#{$size - 1}px -#{$size}px 0 #{$bg}, #{$size}px #{$size - 1}px 0 #{$bg}, -#{$size}px #{$size - 1}px 0 #{$bg}, #{$size}px -#{$size - 1}px 0 #{$bg}, -#{$size}px -#{$size - 1}px 0 #{$bg}, #{$size - 1}px #{$size - 1}px 0 #{$bg}, -#{$size - 1}px #{$size - 1}px 0 #{$bg}, #{$size - 1}px -#{$size - 1}px 0 #{$bg}, -#{$size - 1}px -#{$size - 1}px 0 #{$bg};
 }
-
 // ----
 // 三角形
 // * ex) @include triangle(#000, 6px, 6px, top); 色, width, height, 頂点の方向(top/right/bottom/left)
