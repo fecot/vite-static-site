@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+<head>
+{{> _meta }}
+<title>{{ title }}</title>
+{{> _link }}
+</head>
+<body>
+<div class="l-wrapper flex flex-col min-h-screen">
+{{> _header }}
+<div class="l-contents grow bg-pink-500">
+<main class="p-4">
+{{> mainContent }}
+<ul>
+<li><a href="/">Top</a></li>
+<li><a href="/project/">Project</a></li>
+<li><a href="/office/">Office</a></li>
+</ul>
+</main>
+</div>
+{{> _footer }}
+</div>
+<script type="module" src="/main.js"></script>
+</body>
+</html>

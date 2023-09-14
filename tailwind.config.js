@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/index.html",
+    "./src/**/*.{html}",
+    "./src/partials/*.hbs",
     "./src/**/*.{js}",
   ],
   theme: {
