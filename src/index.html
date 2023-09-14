@@ -5,23 +5,23 @@
 <link rel="icon" type="image/svg+xml" href="/vite.svg" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Vite App</title>
-<link rel="stylesheet" href="/assets/css/style.scss" />
+<link rel="stylesheet" href="/assets/scss/style.scss" />
+<link href='https://fonts.googleapis.com/css?family=Zen Old Mincho' rel='stylesheet'>
 </head>
 <body>
-<header class="bg-blue-500 text-white p-4">
-<h1 class="text-2xl">Welcome to my project!</h1>
+<div class="l-wrapper flex flex-col min-h-screen">
+<header class="text-black p-4 w-full bg-amber-50">
+<h1 class="text-2xl">Header</h1>
 </header>
+<div class="l-contents grow bg-amber-600">
 <main class="p-4">
-<p class="text-gray-800">
-This is a simple example of how to use Tailwind CSS in your project.
-</p>
-<div class="bg-gray-300 p-4 rounded-lg">
-<button class="bg-green-500 text-white p-2 rounded-lg hover:bg-green-600">Click me</button>
-</div>
+<h2 class="text-2xl">Main</h2>
 </main>
-<footer class="bg-blue-500 text-white p-4">
-<p>Copyright ©2022 My Project</p>
+</div>
+<footer class="text-white p-4 bg-blue-300">
+<p>Footer</p>
 </footer>
+</div>
 <script type="module" src="/main.js"></script>
 </body>
 </html>

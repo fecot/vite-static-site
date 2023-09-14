@@ -5,6 +5,12 @@
 @import "variables";
 @import "mixins";
 
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+}
+
 body {
   font-family: $default-font-family;
 }
