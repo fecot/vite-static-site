@@ -9,7 +9,9 @@ export default defineConfig({
   plugins: [
     handlebars({
       context(pagePath) {
-        return pageData[pagePath]
+        const data = pageData[pagePath]
+        data['siteName'] = 'My Site'
+        return data
       },
       partialDirectory: resolve(__dirname, 'src', 'partials')
     })
